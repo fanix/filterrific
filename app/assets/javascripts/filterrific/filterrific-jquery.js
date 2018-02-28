@@ -24,8 +24,8 @@ Filterrific.submitFilterForm = function(){
   // turn on spinner
   $('.filterrific_spinner').show();
   // Trigger a custom event so that others may then bind to it, if they want to.
- +  // Example: I want to do something whenever the filtered results changes.
- +  $('#filterrific_filter').trigger('filterrific_filter:submit');
+  // Example: I want to do something whenever the filtered results changes.
+  $('#filterrific_filter').trigger('filterrific_filter:submit');
   // Submit ajax request
   $.ajax({
     url: url,
