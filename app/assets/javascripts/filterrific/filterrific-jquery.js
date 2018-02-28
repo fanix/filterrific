@@ -83,9 +83,10 @@ Filterrific.submitFilterForm = function(){
 
 Filterrific.init = function() {
   // Add change event handler to all Filterrific filter inputs.
+  // Only input with class "on_change"
   $('#filterrific_filter').on(
     "change",
-    ":input",
+    ":input.on_change",
     Filterrific.submitFilterForm
   );
 
